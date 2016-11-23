@@ -10,7 +10,7 @@ class TulingWXBot(WXBot):
     def __init__(self):
         WXBot.__init__(self)
 
-        self.tuling_key = ""
+        self.tuling_key = "0d0f72a8e5a94214899cde383477893e"
         self.robot_switch = True
 
         try:
@@ -97,7 +97,7 @@ class TulingWXBot(WXBot):
 def main():
     bot = TulingWXBot()
     bot.DEBUG = True
-    bot.conf['qr'] = 'png'
+    bot.conf['qr'] = 'tty'
 
     bot.run()
 
